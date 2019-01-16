@@ -1,0 +1,32 @@
+{
+  "name": "ocular-node-server",
+  "version": "0.0.1",
+  "description": "Back-end Node server for front-end React",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev:server": "nodemon -L index.js",
+    "start": "node index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/QuentinMcCarthy/ocular-node-server.git"
+  },
+  "author": "QuentinMcCarhy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/QuentinMcCarthy/ocular-node-server/issues"
+  },
+  "homepage": "https://github.com/QuentinMcCarthy/ocular-web-app-portfolio#readme",
+  "dependencies": {
+    "@google/maps": "^0.5.5",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "node-behance-api": "^1.3.0",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": "10.8.0"
+  }
+}
