@@ -3,7 +3,8 @@ const path = require('path');
 const cors = require('cors');
 const request = require('request');
 const Behance = require('node-behance-api');
-const config = require('./config');
+
+require('dotenv').config();
 
 const app = express();
 
@@ -11,7 +12,7 @@ const app = express();
 app.use(cors());
 
 // Behance module setup
-const behance = new Behance({'client_id': `${config.behanceKey}`});
+const behance = new Behance({'client_id': `${process.env.behanceKey}`});
 Behance.initOptions();
 
 app.use(function(req,res,next){
