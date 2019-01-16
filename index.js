@@ -4,8 +4,6 @@ const cors = require('cors');
 const request = require('request');
 const Behance = require('node-behance-api');
 
-require('dotenv').config();
-
 const app = express();
 
 // Allow cors
